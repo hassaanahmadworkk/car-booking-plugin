@@ -1,0 +1,135 @@
+/* G9X Booking System Styles */
+.g9x-booking-form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.g9x-form-group {
+    margin-bottom: 15px;
+}
+
+.g9x-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.g9x-form-group select,
+.g9x-form-group input[type="text"],
+.g9x-form-group input[type="email"],
+.g9x-form-group input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Calendar input styling */
+#g9x-date-picker {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.g9x-form-group .description {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Highlight available dates in calendar */
+.ui-datepicker-calendar .available a {
+    background-color: #e8f5e9 !important;
+    border-color: #c8e6c9 !important;
+}
+
+.ui-datepicker-calendar .ui-state-disabled {
+    opacity: 0.5;
+}
+
+.g9x-timeslot-option {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.g9x-timeslot-option.available {
+    background-color: #e8f5e9;
+    border-color: #c8e6c9;
+}
+
+.g9x-timeslot-option.available:hover {
+    background-color: #c8e6c9;
+}
+
+.g9x-timeslot-option.booked {
+    background-color: #ffebee;
+    border-color: #ffcdd2;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.g9x-timeslot-option.selected {
+    background-color: #bbdefb;
+    border-color: #90caf9;
+}
+
+#g9x-submit-booking {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#g9x-submit-booking:hover {
+    background-color: #45a049;
+}
+
+#g9x-booking-form-messages {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#g9x-booking-form-messages.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+}
+
+#g9x-booking-form-messages.error {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+}
+
+#g9x-booking-summary {
+    background-color: #f0f8ff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-left: 4px solid #4285f4;
+}
+
+#g9x-booking-summary h3 {
+    margin-top: 0;
+    color: #4285f4;
+}
+
+#g9x-booking-summary p {
+    margin: 5px 0;
+}
+
+#g9x-booking-time-range, #g9x-booking-hours {
+    font-weight: bold;
+}

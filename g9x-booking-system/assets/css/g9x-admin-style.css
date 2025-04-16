@@ -1,0 +1,104 @@
+/* G9X Booking System Admin Styles */
+
+/* Slot Toggling Styles */
+.g9x-admin-slot { 
+    cursor: pointer; 
+    padding: 5px 10px; 
+    border: 1px solid #ccd0d4; 
+    margin: 4px; 
+    display: inline-block; 
+    border-radius: 3px; 
+    background: #f0f6fc; 
+    color: #1d2327;
+    transition: background-color 0.2s ease, border-color 0.2s ease; 
+    font-size: 0.9em;
+}
+.g9x-admin-slot:hover { 
+    background-color: #e1effb; 
+    border-color: #7e8993;
+}
+.g9x-admin-slot.unavailable { 
+    background: #fbeaea; 
+    border-color: #fecaca; 
+    color: #dc2626; 
+    text-decoration: line-through;
+}
+.g9x-admin-slot.unavailable:hover { 
+    background-color: #fecaca; 
+}
+#g9x_specific_slots_container .loading,
+#g9x_specific_slots_container .error { 
+    text-align: center; 
+    color: #50575e; 
+    padding: 15px; 
+    font-style: italic;
+}
+#g9x_specific_slots_container .error { 
+    color: #d63638; 
+    font-weight: bold; 
+}
+
+/* Summary Styles - Refined */
+#g9x_unavailability_summary {
+    border: 1px solid #dcdcde; /* Standard WP border */
+    background-color: #fff;
+    padding: 10px 15px; /* Adjust padding */
+    margin-top: 20px; /* More space above */
+    max-height: 280px; /* Slightly adjust height */
+    overflow-y: auto;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04); /* Subtle shadow like WP boxes */
+}
+#g9x_unavailability_summary h5 {
+    margin: 0 0 10px 0; /* Adjust margin */
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee; /* Lighter border */
+    font-size: 14px; /* Standard WP heading size */
+    color: #1d2327;
+    font-weight: 600; /* Standard WP heading weight */
+}
+#g9x_unavailability_summary dl {
+    margin: 0;
+    padding: 0;
+}
+#g9x_unavailability_summary dt { /* Style for the Date */
+    font-weight: 600; /* Slightly bolder */
+    margin: 10px 0 2px 0; /* Space above date */
+    padding: 4px 0;
+    color: #1d2327; /* Darker color for date */
+    font-size: 13px; /* Standard WP text size */
+    border-top: 1px dashed #eee; /* Separator above new date */
+}
+#g9x_unavailability_summary dt:first-of-type {
+     margin-top: 0; /* No top margin for the very first date */
+     border-top: none; /* No separator for the very first date */
+}
+#g9x_unavailability_summary dd { /* Style for the Time Slot */
+    margin: 0 0 4px 15px; /* Indent times slightly less */
+    padding: 2px 0;
+    font-size: 13px; /* Standard WP text size */
+    color: #50575e; /* Standard WP text color */
+    border: none; /* Remove bottom border */
+    line-height: 1.4;
+}
+#g9x_unavailability_summary p em { /* Style for 'No items' text */
+    color: #50575e;
+    font-style: italic;
+    display: block;
+    padding: 15px 0; /* More padding */
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Datepicker Highlighting (Increased Specificity) */
+#ui-datepicker-div .ui-datepicker-calendar td.g9x-admin-fullday-unavailable a {
+    background: #fbeaea !important; /* Use background instead of background-color for better override */
+    border: 1px solid #fecaca !important;
+    color: #dc2626 !important;
+    font-weight: bold;
+    opacity: 0.7;
+}
+#ui-datepicker-div .ui-datepicker-calendar td.g9x-admin-partial-unavailable a {
+    background: #fef9c3 !important; /* Lighter yellow */
+    border: 1px solid #fde047 !important;
+    opacity: 0.8;
+}
