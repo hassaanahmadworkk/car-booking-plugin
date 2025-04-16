@@ -3,7 +3,7 @@
  * Plugin Name: G9X Booking System
  * Description: A custom booking system for cars with time slots
  * Version: 1.0.0
- * Author: Your Name
+ * Author: Grow9x
  */
 
 // Exit if accessed directly
